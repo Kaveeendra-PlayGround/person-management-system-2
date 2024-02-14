@@ -1,0 +1,28 @@
+.App{
+    text-align: center;
+
+}
+
+.App-header{
+background-color: black;
+color: white;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: calc(10px + 2vmin);
+font-family: sans-serif, 'Times New Roman', Times, serif;
+
+
+}
+
+.users-button{
+    font-size: 18px;
+    padding: 20px 40 px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fffff;
+
+}
