@@ -1,6 +1,6 @@
-import Userform from "./Userform.tsx";
-import Usertable from "./Usertable.tsx";
 import {Box} from "@mui/material";
+import {Userform} from "./Userform.tsx";
+import {Usertable} from "./Usertable.tsx";
 
 const users = [
     {
@@ -13,7 +13,7 @@ const users = [
     }
 ]
 
-const Users = () => {
+export const Users = () => {
     return (
         <Box sx={{width: 'calc(100% - 100px',
             margin : 'auto',
@@ -24,5 +24,3 @@ const Users = () => {
         </Box>
     );
 };
-
-export default Users;

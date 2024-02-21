@@ -1,9 +1,11 @@
 import {Button, colors, Grid, Input, Typography} from "@mui/material";
+import {useState} from "react";
 
-const Userform = (props : any) => {
+const [id, setId] = useState(0);
+const [name, setName] = useState("");
+export const Userform = (props : any) => {
     return (
         <>
-
             <Grid
                 container
                 spacing={2}
@@ -38,8 +40,9 @@ const Userform = (props : any) => {
                         sx={{
                             width:"400px"
                         }}
-                        value={''}
-                        onChange={e=>{}}
+                        value={id}
+                        onChange={e=>{ // @ts-ignore
+                            setId(e.target.value)}}
                     />
                 </Grid>
                 {/*name grid*/}
@@ -62,8 +65,8 @@ const Userform = (props : any) => {
                         sx={{
                             width:"400px"
                         }}
-                        value={''}
-                        onChange={e=>{}}
+                        value={name}
+                        onChange={e=>{setName(e.target.value)}}
                     />
                 </Grid>
                 <Button
@@ -89,4 +92,3 @@ const Userform = (props : any) => {
     );
 };
 
-export default Userform;

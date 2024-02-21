@@ -1,7 +1,10 @@
 import {Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from "@mui/material";
 
 // @ts-ignore
-const Usertable = ( { rows } ) => {
+export const Usertable = ( { rows } ) => {
+    // @ts-ignore
+    // @ts-ignore
+    // @ts-ignore
     return <>
         <TableContainer component={Paper}>
             <Table>
@@ -15,7 +18,7 @@ const Usertable = ( { rows } ) => {
                 <TableBody>
                         {
                             rows.length > 0 ?
-                            rows.map(row => {
+                            rows.map(row=> {
                                 return (
                                     <TableRow key={row.id}
                                               sx={{'&:last-child td, &:last-child td': {border: 0}}}>
@@ -47,4 +50,3 @@ const Usertable = ( { rows } ) => {
     </>;
 };
 
-export default Usertable
